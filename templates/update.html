@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改</title>
+</head>
+<script type="text/javascript" src="static/js/jquery-1.8.2.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../static/css/index_work.css">
+<body>
+    <form action="/updateInvitation/" method="post">
+        {% for i in invitation %}
+            编号：<input type="text" name="number" value="{{ i.number }}" style="width: 500px" readonly="true"><br>
+            标题：<input type="text" name="title" value="{{ i.title }} " style="width: 500px"><br>
+            内容：<br><textarea name="content" style="width: 550px;height: 200px">{{ i.content }}</textarea><br>
+            链接：<input type="text" name="url" value="{{ i.url }}" style="width: 500px"><br>
+            <input type="submit" value="确认修改">
+        {% endfor %}
+    </form>
+</body>
+</html>

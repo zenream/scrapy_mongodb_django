@@ -1,0 +1,2 @@
+
+    用scrapy框架爬取数据，存储到mongodb数据库中，通过django框架操作mongodb数据库，进行展示、分页、添加、修改、删除功能

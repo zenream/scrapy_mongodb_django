@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<script type="text/javascript" src="static/js/jquery-1.8.2.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../static/css/index_work.css">
+<body>
+    <a href="/toAdd/"><input type="button" value="添加"></a>
+    <table>
+        <thead>
+            <th>编号</th>
+            <th>标题</th>
+            <th>内容</th>
+            <th>链接</th>
+            <th>操作</th>
+        </thead>
+        <tbody>
+            {% for item in invitation %}
+                <tr>
+                    <td>{{ item.number }}</td>
+                    <td>{{ item.title }}</td>
+                    <td>{{ item.content }}</td>
+                    <td><a>{{ item.url }}</a></td>
+                    <td>
+                        <a href="/toUpdate/?number={{ item.number }}"><input type="button" value="修改"></a>
+                        <a href="/delete/?number={{ item.number }}"><input type="button" value="删除"></a>
+                    </td>
+                </tr>
+            {% endfor %}
+            <tr>
+                <th colspan="6">
+                    {% if invitation.has_previous %}
+                    <a href="?page={{ invitation.previous_page_number }}"><input type="button" value="上一页"></a>
+                    {% endif %}
+                    <span>{{ invitation.number }} of {{ invitation.paginator.num_pages }}</span>
+                    {% if invitation.has_next %}
+                        <a href="?page={{ invitation.next_page_number }}"><input type="button" value="下一页"></a>
+                    {% endif %}
+                </th>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

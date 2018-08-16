@@ -1,0 +1,201 @@
+﻿@charset "UTF-8";
+
+form {
+	margin: 0px;
+}
+
+img {
+	border: medium none;
+	margin: 0;
+	padding: 0;
+} /* img elements 图片元素 */
+/** 设置默认字体 **/
+body,button,input,select,textarea {
+	font-size: 12px;
+	font: 12px/1.5 ’宋体’, Arial, tahoma, Srial, helvetica, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+}
+
+em {
+	font-style: normal;
+}
+/** 重置列表元素 **/
+ul,ol {
+	list-style: none;
+}
+/** 重置超链接元素 **/
+a {
+	text-decoration: none;
+	color: #4f4f4f;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #F40;
+}
+/** 重置图片元素 **/
+img {
+	border: 0px;
+	margin-bottom: -7px;
+}
+
+body {
+	width: 80%;
+	margin: 40px auto;
+	font-family: 'trebuchet MS', 'Lucida sans', Arial;
+	font-size: 14px;
+	color: #444;
+	background: url(../css/img/body1.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	/* background: #F5F5F5; */
+}
+
+table {
+	border: solid #ccc 1px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	/* -webkit-box-shadow: 0 1px 1px #ccc;
+	box-shadow: 0 1px 1px #ccc; */
+	-webkit-box-shadow:  0px 2px 1px 5px rgba(242, 242, 242, 0.1);
+    box-shadow:  5px 20px 30px 30px rgba(242, 242, 242, 0.1);
+	width: 100%;
+}
+
+table thead th {
+	background:url(../css/img/zebratable.png);
+	background-repeat:no-repeat;
+	background-position: 0px center;
+}
+
+table tr {
+	background: #D5EAF0;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .8) inset;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, .8) inset;
+}
+
+table tr:nth-child(even) {
+	background: #D7E1C5;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .8) inset;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, .8) inset;
+}
+
+table tr:hover {
+	background: #91C5D4;
+	-o-transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	-ms-transition: all 0.1s ease-in-out;
+	transition: all 3s ease-in-out;
+	
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#151515), to(#404040)) !important;
+    background-image: -webkit-linear-gradient(top, #151515, #404040) !important;
+    background-image:    -moz-linear-gradient(top, #151515, #404040) !important;
+    background-image:     -ms-linear-gradient(top, #151515, #404040) !important;
+    background-image:      -o-linear-gradient(top, #151515, #404040) !important;
+    background-image:         linear-gradient(top, #151515, #404040) !important;
+	color:#fff !important;
+}
+
+table td,table th {
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	padding: 10px;
+	text-align: center;
+}
+
+table th {
+	background-color: #66a9bd;
+	background-image: -moz-linear-gradient(top, #dce9f9, #66a9bd);
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .8) inset;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, .8) inset;
+	border-top: none;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+}
+
+table td:first-child,table th:first-child {
+	border-left: none;
+}
+
+table th:first-child {
+	-webkit-border-radius: 6px 0 0 0;
+	border-radius: 6px 0 0 0;
+}
+
+table th:last-child {
+	-webkit-border-radius: 0 6px 0 0;
+	border-radius: 0 6px 0 0;
+}
+
+table th:only-child {
+	-webkit-border-radius: 6px 6px 0 0;
+	border-radius: 6px 6px 0 0;
+}
+
+table tr:last-child td:first-child {
+	-webkit-border-radius: 0 0 0 6px;
+	border-radius: 0 0 0 6px;
+}
+
+table tr:last-child td:last-child {
+	-webkit-border-radius: 0 0 6px 0;
+	border-radius: 0 0 6px 0;
+}
+
+input[type="button"],input[type="submit"],input[type="reset"] {
+	border: solid #ccc 1px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0 1px 1px #ccc;
+	box-shadow: 0 1px 1px #ccc;
+	background: #B0CC7F;
+	margin: 0 2px 0;
+}
+
+input[type="text"],input[type="password"] {
+	border: solid #ccc 2px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0 1px 1px #ccc;
+	box-shadow: 0 1px 1px #ccc;
+	background: #efefef;
+	margin: 0 2px 0;
+	text-indent: 5px;
+}
+select {
+	width:200px;
+	border: solid #ccc 2px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0 1px 1px #ccc;
+	background: #efefef;
+	margin: 0 2px 0;
+	text-indent: 5px;
+}
+option {
+	width:180px;
+	border: solid #ccc 2px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0 1px 1px #ccc;
+	background: #efefef;
+	margin: 0 2px 0;
+	text-indent: 5px;
+}
+
+input[name="page.now"] {
+	border: solid #ccc 1px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0 1px 1px #ccc;
+	box-shadow: 0px 0px 0px #CEB754;
+	background: #D5EAF0;
+	margin: 0px 10px 0px 0px;
+	padding-bottom: 0px;
+	padding-top: 5px; 
+	width: 24px; 
+	line-height:10px; 
+	height: 12xp; 
+}
